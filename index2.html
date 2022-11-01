@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    <script>
+        $( function() {
+          $( "#s1" ).slider({
+            animate: "slow",
+            max: 10,
+            values: ["5"],
+            slide: function(event,ui){
+                $("#res1").text(ui.values[0]);
+            }
+          });
+        } );
+        </script>
+
+<script>
+    $( function(){
+      $("#d1, #d2").dialog({
+        autoOpen: false,
+        resizable: false,
+      })
+      $('#b1, #b2').button().click(function(e){
+        let target = this.id == "b1" ? "#d1" : "#d2";
+         if($(target).dialog("isOpen")){
+            $(target).dialog("close")
+        }else{
+          $(target).dialog("open")
+        }
+      })
+    });
+
+</script>
+<!---->
+
+<script>
+    $( function() {
+      $( "#s2" ).slider({
+        animate: "slow",
+        max: 10,
+        values: ["5"],
+        slide: function(event,ui){
+            $("#res2").text(ui.values[0]);
+        }
+      });
+    } );
+    </script>
+
+<script>
+$( function(){
+  $("#d3, #d4").dialog({
+    autoOpen: false,
+    resizable: false,
+  })
+  $('#b3, #b4').button().click(function(e){
+    let target = this.id == "b3" ? "#d3" : "#d4";
+     if($(target).dialog("isOpen")){
+        $(target).dialog("close")
+    }else{
+      $(target).dialog("open")
+    }
+  })
+});
+
+</script>
+
+<!---->
+<script>
+    $( function() {
+      $( "#s3" ).slider({
+        animate: "slow",
+        max: 10,
+        values: ["5"],
+        slide: function(event,ui){
+            $("#res3").text(ui.values[0]);
+        }
+      });
+    } );
+    </script>
+
+<script>
+$( function(){
+  $("#d5, #d6").dialog({
+    autoOpen: false,
+    resizable: false,
+  })
+  $('#b5, #b6').button().click(function(e){
+    let target = this.id == "b5" ? "#d5" : "#d6";
+     if($(target).dialog("isOpen")){
+        $(target).dialog("close")
+    }else{
+      $(target).dialog("open")
+    }
+  })
+});
+
+</script>
+<!---->
+<script>
+    $( function() {
+      $( "#s4" ).slider({
+        animate: "slow",
+        max: 10,
+        values: ["5"],
+        slide: function(event,ui){
+            $("#res4").text(ui.values[0]);
+        }
+      });
+    } );
+    </script>
+
+<script>
+$( function(){
+  $("#d7, #d8").dialog({
+    autoOpen: false,
+    resizable: false,
+  })
+  $('#b7, #b8').button().click(function(e){
+    let target = this.id == "b7" ? "#d7" : "#d8";
+     if($(target).dialog("isOpen")){
+        $(target).dialog("close")
+    }else{
+      $(target).dialog("open")
+    }
+  })
+});
+
+</script>
+<!---->
+    <style>
+        body{
+            background-color: #191919;
+        }
+    </style>
+   <style>
+    h2{
+        text-align: center;
+        font-size: 25px;
+        margin-top: -20px;
+        color: #860101;
+        font-family: Georgia, serif;
+        font-weight: bold;
+    }
+   </style>
+   
+    <style>
+        h1{
+        text-align: center;
+        color: rgb(231, 0, 0);
+        font-family: Georgia, serif;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 60px;
+        };
+    </style>
+    <style>
+        .picture {
+            float:left; 
+            margin: -10px 50px 7px 10px; 
+            width: 300px;
+            height: auto;
+            border: 2px dashed rgb(216, 0, 0);
+        };
+    </style>
+    <style>
+        h3{
+            font-size: 35px;
+            color: rgb(193, 0, 0);
+        }
+    </style>
+    <style>
+        p{
+            font-size: 25px;
+            font-weight: 600;
+        }
+    </style>
+    <style>
+        .text{
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+    <style>
+        #s1{
+    display: flex;
+    justify-content: flex-end;
+    width:850px;
+    height:10px;
+    border: 2px solid rgb(75, 0, 0);
+}
+    </style>
+    <style>
+        #first{
+            background-color: #121212;
+            margin: 20px 20px 70px 20px;
+            border: 1px solid white;
+        }
+    </style>
+    <style>
+        #b1{
+margin: 20px 0 20px 0;
+        }
+    </style>
+    <style>
+        .ui-widget-header, .ui-state-default, .ui-button {
+            background-color: #121212;
+            border: 2px solid white;
+            color: rgb(193, 0, 0);
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        .ui-widget-content{
+            background-color: white;
+            border: 3px solid rgb(193, 0, 0);
+        }
+    </style>
+    <style>
+        img{
+            width: 500px;
+        }
+    </style>
+    <style>
+        .ui-slider-handle.ui-corner-all.ui-state-default{
+            background-color: #860101;
+            border: 2px solid rgb(255, 255, 255);
+        }
+    </style>
+
+    <!---->
+    <style>
+        #f2{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 30px;
+            color: #860101;
+            font-family: Georgia, serif;
+            font-weight: bold;
+        }
+       </style>
+    <style>
+        #s2{
+    display: flex;
+    justify-content: flex-end;
+    width:850px;
+    height:10px;
+    border: 2px solid rgb(75, 0, 0);
+}
+    </style>
+    <style>
+        #second{
+            background-color: #121212;
+            margin: 0 20px 70px 20px;
+            border: 1px solid white;
+        }
+    </style>
+    <style>
+        #b3{
+    margin: 20px 0 20px 0;
+        }
+    </style>
+
+    <!---->
+    <style>
+        #s3{
+    display: flex;
+    justify-content: flex-end;
+    width:850px;
+    height:10px;
+    border: 2px solid rgb(75, 0, 0);
+}
+    </style>
+    <style>
+        #third{
+            background-color: #121212;
+            margin: 0 20px 70px 20px;
+            border: 1px solid white;
+        }
+    </style>
+    <style>
+        #b5{
+    margin: 20px 0 20px 0;
+        }
+    </style>
+     <style>
+        .picture3 {
+            float:left; 
+            margin: -13px 50px 10px 10px; 
+            width: 260px;
+            height: auto;
+            border: 2px dashed rgb(216, 0, 0);
+        };
+    </style>
+<!---->
+<style>
+    #s4{
+display: flex;
+justify-content: flex-end;
+width:850px;
+height:10px;
+border: 2px solid rgb(75, 0, 0);
+}
+</style>
+<style>
+    #forth{
+        background-color: #121212;
+        margin: 0 20px 70px 20px;
+        border: 1px solid white;
+    }
+</style>
+<style>
+    #b7{
+margin: 20px 0 20px 0;
+    }
+</style>
+<!---->
+
+</head>
+<body>
+    <h1 class="films">Квитки на фільми</h1>
+    <!---->
+    <h2>Перший фільм</h2>
+    <div id="first">
+
+    <h3><img class="picture" src="https://kinoboomer.com.ua/sites/default/files/posters/8a4586767da97f37925f5c2211935246c585f030.jpg" alt="">Гірська лихоманка</h3>
+
+    <p class="text">Жанр: трилер, драма<br>
+        Режисер: Джуліан Ґілбі<br>
+        Актори: Раян Філліпп, Ганна Нью, Фредді Торп<br>
+        Тривалість: 115 хв.</p>
+
+        <p class="text">Молодий англійський альпініст ступає на гірську стежку в Альпах, щоб допомогти своєму другові за одне літо підкорити «велику трійку»: Матергорн, Айгер і Монблан. Уже під час перших двох сходжень друзі стають свідками кривавих смертельних випадків, однак, не зважаючи на це, наполегливо розпочинають третє. Вони навіть не підозрюють, що на іншому боці гори саме в цей час назріває смертоносний шторм.</p>
+
+        <div id="s1"> </div>
+        <b style="color: white; font-size: 18px;">Рейтинг: <span id="res1" style="color: rgb(193, 0, 0);;"></span> / 10 </b>
+<br>
+        <div id="d1" title="Місця &quot;Гірська лихоманка&quot;">
+            <img src="img/image1.png" alt="">
+            </div>
+            <button id="b1"><p>Подивитися місця на фільм</p></button>
+        </div>
+        <hr>
+   <!---->
+        <h2 id="f2">Другий фільм</h2>
+        <div id="second">
+
+            <h3><img class="picture" src="https://kinoboomer.com.ua/sites/default/files/posters/6b9c6cc21ac57c4c728042c6293e4ddae022707e.jpg" alt="">
+                Джиперс Кріперс: Відродженний</h3>
+        
+            <p class="text">Жанр: трилер, жахи<br>
+                Режисер: Тімо Вуоренсола<br>
+                Актори: Сідні Крейвен, Імран Адамс, Жаро Бенжамен<br>
+                Тривалість: 88 хв.</p>
+        
+                <p class="text">Вимушена поїхати зі своїм бойфрендом на Horror Hound festival, Лейн не відчуває радості. У міру наближення події дівчину починають мучити незрозумілі передчуття та тривожні видіння. У розпал фестивалю Лейн вже впевнена, що відбувається щось надприродне і що вона знаходиться в центрі всього цього.</p>
+        
+                <div id="s2"> </div>
+                <b style="color: white; font-size: 18px;">Рейтинг: <span id="res2" style="color: rgb(193, 0, 0);;"></span> / 10 </b>
+        <br>
+                <div id="d3" title="Місця &quot;Джиперс Кріперс: Відродженний&quot;">
+                    <img src="img/image1.png" alt="">
+                    </div>
+                    <button id="b3"><p>Подивитися місця на фільм</p></button>
+                </div>
+                <hr>
+     <!---->
+     <h2 id="f2">Третій фільм</h2>
+     <div id="third">
+
+         <h3><img class="picture3" src="https://kinoboomer.com.ua/sites/default/files/posters/af2dcb56322b32baea6be2bf34e14cfb94f2fd75.jpg" alt="">
+             Хелловін. Кінець</h3>
+     
+         <p class="text">Жанр: трилер, жахи<br>
+            Режисер: Девід Ґордон Ґрін<br>
+            Актори: Джеймі Лі Кертіс, Вілл Паттон, Кайл Річардс<br>
+            Тривалість: 111 хв.</p>
+     
+             <p class="text">Остання глава культового слешера про моторошного маніяка в масці Майкла Майєрса! Чи вдасться зупинити безжального вбивцю цього разу?</p>
+     
+             <div id="s3"> </div>
+             <b style="color: white; font-size: 18px;">Рейтинг: <span id="res3" style="color: rgb(193, 0, 0);;"></span> / 10 </b>
+     <br>
+             <div id="d5" title="Місця &quot;Хелловін. Кінець&quot;">
+                 <img src="img/image2.png" alt="">
+                 </div>
+                 <button id="b5"><p>Подивитися місця на фільм</p></button>
+             </div>
+             <hr>
+             <!---->
+             <h2 id="f2">Четвертий фільм</h2>
+             <div id="forth">
+
+         <h3><img class="picture" src="https://kinoboomer.com.ua/sites/default/files/posters/999dfb39c8dd927f03ac3bc0143ac3825e4d83fe.jpg" alt="">
+             Аватар. Шлях води</h3>
+     
+         <p class="text">Жанр: пригоди, фантастика, фентезі, екшн<br>
+            Режисер: Джеймс Кемерон<br>
+            Актори: Сем Вортінґтон, Зої Салдана, Кейт Вінслет<br>
+            Тривалість: 162 хв.</p>
+     
+             <p class="text">Історія фільму «Аватар: Шлях води» розгортається більше ніж через десятиліття після подій першого фільму. Стрічка розповідає про сім’ю Саллі (Джейка, Нейтірі та їхніх дітей), проблеми, які їх переслідують, шлях, який вони долають, щоб захистити одне одного від небезпек, битви, які вони ведуть, щоб залишитися живими, і трагедії, які вони переживають разом.</p>
+     
+             <div id="s4"> </div>
+             <b style="color: white; font-size: 18px;">Рейтинг: <span id="res4" style="color: rgb(193, 0, 0);;"></span> / 10 </b>
+     <br>
+             <div id="d7" title="Місця &quot;Аватар. Шлях води&quot;">
+                 <img src="img/image1.png" alt="">
+                 </div>
+                 <button id="b7"><p>Подивитися місця на фільм</p></button>
+             </div>
+</body>
+</html>
